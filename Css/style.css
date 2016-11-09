@@ -1,8 +1,18 @@
 body{
     width: 80%;
-/*    background-image:url("Background&logo/Backgroundbody.jpg");*/
-/*    Background&logo/*/
-/*        background-color: aqua;*/
+    background-image:url("Back&logo/Backgroundbody.jpg");
+}
+.sections{
+    width :80%;
+/*	border: 2px solid #663d00;*/
+	margin: auto;
+	padding:30px;
+	margin-top:10px;
+}
+
+header{
+    float: left;
+    
 }
 .leftsidepara{
     
@@ -17,7 +27,5 @@ body{
     
 }
 p{
-/*    background-color: aqua;*/
-    background-image: image("Back&logo/Backgroundbody.jpg");
-/*    background-image:"Back&logo/Backgroundbody.jpg";*/
+   background-image:  url("Backgroundbody.jpg");
 }
