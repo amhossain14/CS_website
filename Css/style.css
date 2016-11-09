@@ -1,0 +1,23 @@
+body{
+    width: 80%;
+/*    background-image:url("Background&logo/Backgroundbody.jpg");*/
+/*    Background&logo/*/
+/*        background-color: aqua;*/
+}
+.leftsidepara{
+    
+}
+.rightsideimg{
+    
+}
+.leftsideimg{
+    
+}
+.rightsidepara{
+    
+}
+p{
+/*    background-color: aqua;*/
+    background-image: image("Back&logo/Backgroundbody.jpg");
+/*    background-image:"Back&logo/Backgroundbody.jpg";*/
+}
