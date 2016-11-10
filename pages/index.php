@@ -30,7 +30,12 @@
 					<?php 
 						$inFile = file("updates.txt");
 						
-						for($i = 0; $i < count($inFile); $i++){?>
+						for($i = 0; $i < count($inFile); $i++){
+							$compareDate = 
+							if($inFile[$i] ){?>
+								<?$i+=3?>
+							}
+							
 							<h4><?$inFile[$i]?></h4>
 							<?$i++;?>
 							<p><?$inFile[$i]?></p>

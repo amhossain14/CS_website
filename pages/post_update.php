@@ -24,9 +24,11 @@
 					$info = $_POST['title'];
 					$date = .date('Y_m_d').;
 					$outFile = file("updates.txt");
-					file_put_contents($outFile, $title, FILE_APPEND);
-					file_put_contents($outFile, $info, FILE_APPEND);
-					file_put_contents($outFile, $date, FILE_APPEND);
+					$length = $_POST['length'];
+					file_put_contents($outFile, $title."\r\n", FILE_APPEND);
+					file_put_contents($outFile, $title."\r\n", FILE_APPEND);
+					file_put_contents($outFile, $info."\r\n", FILE_APPEND);
+					file_put_contents($outFile, $date."\r\n", FILE_APPEND);
 				?>
 			</main>
 			<footer>
