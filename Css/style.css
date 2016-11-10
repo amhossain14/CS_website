@@ -42,9 +42,8 @@ br{
     clear:both;
 }
 
-
 .paragraph{
-    font-size:90%;
+    font-size:100%;
     width:60%;
     display:inline-block;
     background-image:  url("../Back&logo/pp.jpg");
@@ -64,5 +63,25 @@ br{
     width:70%;
 }
 .searchnav{
-    
+/*    for searh bar*/
+}
+footer{
+	background-image: url("Footer.png");
+	background-repeat: no-repeat;
+	background-size:cover;
+	padding: 80px 30px;
+	bottom:0;
+}
+footer p {
+background-image:  url("../Back&logo/pp.jpg");
+    background-size: cover;
+	color:black;
+	font-size:110%;
+	font-weight:Bold;
+	text-align:center;
+	width:20%;
+	margin:auto;
+	padding:5px;
+    text-decoration: none;
+	
 }
