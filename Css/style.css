@@ -66,15 +66,15 @@ br{
 /*    for searh bar*/
 }
 footer{
-	background-image: url("Footer.png");
+	background-image:  url("../Back&logo/Footer.png");
 	background-repeat: no-repeat;
 	background-size:cover;
-	padding: 80px 30px;
+/*	padding: 80px 30px;*/
 	bottom:0;
 }
 footer p {
-background-image:  url("../Back&logo/pp.jpg");
-    background-size: cover;
+/*background-image:  url("../Back&logo/Footer.png");*/
+/*    background-size: cover;*/
 	color:black;
 	font-size:110%;
 	font-weight:Bold;
