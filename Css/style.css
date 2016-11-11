@@ -1,7 +1,7 @@
 body{
     font-family: "Cuprum";
     width: 100%;
-    background-image:url("../Back&logo/Backgroundbody.jpg");
+    background-image:url("../back_logo/Backgroundbody.jpg");
     background-size: cover;
 }
 .sections{
@@ -66,7 +66,7 @@ br{
 /*    for searh bar*/
 }
 footer{
-	background-image:  url("../Back&logo/Footer.png");
+	background-image:  url("../back_logo/Footer.png");
 	background-repeat: no-repeat;
 	background-size:cover;
 /*	padding: 80px 30px;*/
