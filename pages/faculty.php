@@ -21,7 +21,7 @@
 			<main>
                 
                 <?php    
-            $facdir = scandir('../faculty'); //will put into arrary
+            $facdir = scandir('../faculty'); //will put into array
             $faccount = count($facdir);   //  will count how many are there
                  
                     $toggle = 1;
