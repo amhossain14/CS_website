@@ -13,7 +13,7 @@
 				if(isset($_POST['prof']))
 				{	
 					$text = $_POST['prof'];
-					$file = "./$text.txt";
+					$file = "../faculty/.$_POST['prof']./$text.txt";
 				}
 				
 				file_put_contents($file , "");
