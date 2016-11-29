@@ -10,13 +10,46 @@
 			if($_POST) 
 			{ 
 				
-				if(isset($_POST['prof']))
+				if($_POST['prof'] =='dr_cichanowski')
 				{	
-					$text = $_POST['prof'];
-					$file = "../faculty/.$_POST['prof']./$text.txt";
+					$text = $_POST['day'];
+					$facdir = scandir('../faculty');
+					$parent ="../faculty/";
+					$filename = "/$text.txt";
+					
+					$file = "$parent$facdir[4]$filename";
 				}
 				
-				file_put_contents($file , "");
+				if($_POST['prof'] =='dr_schumacher')
+				{	
+					$text = $_POST['day'];
+					$facdir = scandir('../faculty');
+					$parent ="../faculty/";
+					$filename = "/$text.txt";
+					
+					$file = "$parent$facdir[3]$filename";
+				}
+				
+				if($_POST['prof'] =='dr_francioni')
+				{	
+					$text = $_POST['day'];
+					$facdir = scandir('../faculty');
+					$parent ="../faculty/";
+					$filename = "/$text.txt";
+					
+					$file = "$parent$facdir[5]$filename";
+				}
+				
+				if($_POST['prof'] =='dr_debnath')
+				{	
+					$text = $_POST['day'];
+					$facdir = scandir('../faculty');
+					$parent ="../faculty/";
+					$filename = "/$text.txt";
+					
+					$file = "$parent$facdir[6]$filename";
+				}
+				
 				
 				if(isset($_POST['day'])) 
 				{ 
