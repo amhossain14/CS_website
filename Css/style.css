@@ -85,3 +85,42 @@ footer p {
     text-decoration: none;
 	
 }
+.block{
+	padding-left: 15px;
+	padding-right: 15px;
+}
+.block ul {
+    margin: 0;
+    padding: 0;
+}
+.block ul li {
+    list-style-type: none;
+    display: inline-block;
+    background: #4618dd;
+    margin: 0;
+    padding: 3px 10px;
+    border-radius: 4px 4px 0 0;
+    cursor: pointer;
+	color: #FFFFFF;
+
+}
+.block ul li:hover {
+    color: #333;
+    background: #DDD;
+}
+
+.block ul li.shown {
+    color: #333;
+    background: #DDD;
+}       
+
+.block .panel {
+    display:none;
+    background: #DDD;
+    padding: 0px;
+    border-radius: 0 0 0px 0px;
+}
+
+.block .panel.shown {
+    display:block;
+}
