@@ -119,7 +119,7 @@
                         <p> montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem  penatibus et magnis dis parturient.
                         </p>
                     </div>
-                    <div id="gap">
+                    <div class="gap">
 <!--                        <p></p>-->
                     </div>
                     <div class="box2middle">
@@ -129,15 +129,30 @@
                     </div>
                 </div>
                 <br>
+                
+                
+                
             <div class="maindivofhome">
-                    <div class="box1">
-                        <p> montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem  penatibus et magnis dis parturient.
-                        </p>
+                    <div class="box1middle">
+                        <img class ="imagelast2" src="../icon/csclub.png" alt="csclublogo" >
+                        <h3>CS CLUB</h3>
+                    <p> 175 W Mark St, Winona, <br>
+                        Winona State University<br>
+                        PO Box 5838<br>
+                        Winona MN 55987<br>
+                        507.457.5385</p>
                     </div>
                 
-                    <div class="box2">
-                    <p> montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem  penatibus et magnis dis parturient.
-                        </p>
+                    <div class="gap"></div>
+                
+                    <div class="box2middle">
+                         <img class ="imagelast2" src="../icon/contact.png" alt="contact" >  
+                        <h3>Contact Us</h3>
+                    <p> Computer Science Department<br>
+                        Winona State University<br>
+                        PO Box 5838<br>
+                        Winona MN 55987<br>
+                        507.457.5385</p>
                     </div>
 
             </div>
