@@ -125,6 +125,41 @@ footer p {
     display:block;
 }
 
+
+.slide {
+/*
+    padding: 10px;
+margin: auto;
+*/
+    border-radius: 5px;
+/*
+    width: 60%;
+    height: 90%;
+*/
+        width: 600px;
+        height: 400px;
+        overflow: hidden;
+        float: left;
+        display: none;
+    text-align: center;
+    align-content: center;
+            }
+#slidemachine {
+/*
+    padding: 10px;
+margin: auto;
+   width: 60%;
+    height: 90%;
+*/
+    width: 600px;
+   height: 400px;
+    overflow: hidden;
+     margin: 30px auto;
+      text-align: center;
+    align-content: center;
+            }
+
+
 .maindivofhome{
 /*
     background-image:  url("../back_logo/pp.jpg");

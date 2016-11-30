@@ -7,35 +7,12 @@
 		<link rel="stylesheet" href="../css/style.css">
 		<link rel="icon" href="../back_logo/logow.png">
         <link href="https://fonts.googleapis.com/css?family=Bree+Serif|Cuprum:400,400i,700,700i" rel="stylesheet">
-        <style>
-            .slide {
-                width: 600px;
-                height: 400px;
-                overflow: hidden;
-                float: left;
-                display: none;
-            }
-            #slidemachine {
-                width: 600px;
-                height: 400px;
-                overflow: hidden;
-                margin: 30px auto;
-            }
-            
-        </style>
+
         <script>
-            
-           
             var slideNum = 1;
             var totalSlides = 3;
             var time = 3000; //time for each slide
-            
-            
-            
  
-            
-            
-            
             $(function() {
 
                 show();
@@ -108,9 +85,9 @@
                 <button id="lbutton" onclick="prev();">LEFT</button>
                 <button id="rbutton" onclick="next();">RIGHT</button>
 <div id="slidemachine">
-           <img src="imgtest/angel.jpg" id="S1" class="slide">
-            <img src="imgtest/ashera.jpg" id="S2" class="slide">
-            <img src="imgtest/bolas.png" id="S3" class="slide">
+           <img src="../Slidesimg/slides(1).jpg"  id="S1" class="slide">
+            <img src="../Slidesimg/slides(2).png " id="S2" class="slide">
+            <img src="../Slidesimg/slides(3).png" id="S3" class="slide">
 </div>  
 
                 <div class="maindivofhome">
