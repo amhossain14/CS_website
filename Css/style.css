@@ -131,7 +131,7 @@ footer p {
     background-size: cover;
 */
     width: 80%;
-    background-color: aqua;
+/*    background-color: aqua;*/
     text-align: center;
     align-content: center;
     padding: 10px;
@@ -149,7 +149,7 @@ footer p {
     background-size: cover;
     margin: auto;
     width: 40%;
-    background-color: red;
+/*    background-color: red;*/
     display: inline-block;
     text-align: center;
     align-content: center;
@@ -163,7 +163,7 @@ footer p {
     background-size: cover;
     margin: auto;
     width: 40%;
-    background-color: greenyellow;
+/*    background-color: greenyellow;*/
     display: inline-block;
     text-align: center;
     align-content: center;
@@ -199,5 +199,5 @@ h3{
     width:4.5%;
     display: inline-block;
     margin: auto;
-    background-color: orangered;
+/*    background-color: orangered;*/
 }

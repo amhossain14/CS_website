@@ -130,6 +130,8 @@
                     </div>
                 </div>    <!--  Main div ends with first part -->
                 <br>
+                
+                <!--div with 3 divs Start -->
              <div class="maindivofhome">
                 
                     <div class="boxtype3">
@@ -150,8 +152,7 @@
                         </p>
                     </div>
                 </div>   
-                                
-                
+                 <!--div with 3 divs ends -->
                 
                 <br>
             <div class="maindivofhome">
