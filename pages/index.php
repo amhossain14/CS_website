@@ -114,12 +114,13 @@
 </div>  
 
                 <div class="maindivofhome">
+                
                     <div class="box1middle">
                         <h3>UPDATE</h3>
                         <p> Sign up for Star Alert Emergency Notification System, which provides immediate emergency communications if a situation were to occur on WSU's campus.
                         </p>
                     </div>
-                    <div class="gap">
+                    <div class="gapbetween2">
 <!--                        <p></p>-->
                     </div>
                     <div class="box2middle">
@@ -127,11 +128,32 @@
                     <p> Winona State University has been named a Military Friendly School for 2016, according to Victory Media’s 2016 guide to Military Friendly Schools.
                         </p>
                     </div>
-                </div>
+                </div>    <!--  Main div ends with first part -->
                 <br>
+             <div class="maindivofhome">
+                
+                    <div class="boxtype3">
+                        <h3>UPDATE</h3>
+                        <p> Sign up for Star Alert Emergency Notification System, which provides immediate emergency communications if a situation were to occur on WSU's campus.
+                        </p>
+                    </div>
+                 <div class="gapbetween3"></div>
+                    <div class="boxtype3">
+                   <h3>UPDATE</h3>
+                        <p> Sign up for Star Alert Emergency Notification System, which provides immediate emergency communications if a situation were to occur on WSU's campus.
+                        </p>
+                    </div>
+                  <div class="gapbetween3"></div>
+                    <div class="boxtype3">
+                        <h3>EXTRA</h3>
+                    <p> Winona State University has been named a Military Friendly School for 2016, according to Victory Media’s 2016 guide to Military Friendly Schools.
+                        </p>
+                    </div>
+                </div>   
+                                
                 
                 
-                
+                <br>
             <div class="maindivofhome">
                     <div class="box1middle">
                 <a href="http://www.wsucs.club/"><img class ="imagelast2" src="../icon/csclub.png" alt="csclublogo" ></a>
@@ -143,7 +165,7 @@
                         507.457.5385</p>
                     </div>
            
-                    <div class="gap"></div>
+                    <div class="gapbetween2"></div>
                 
                     <div class="box2middle">
                          <img class ="imagelast2" src="../icon/contact.png" alt="contact" >  
@@ -154,9 +176,9 @@
                         Winona MN 55987<br>
                         507.457.5385</p>
                     </div>
-
+                
             </div>
-
+                <br> <!--  Main div of last part ends  -->
         </main>
 			<footer>
 				<div id="footer_div"></div>

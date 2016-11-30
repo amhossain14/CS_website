@@ -138,7 +138,7 @@ footer p {
     vertical-align: bottom;
     margin: auto;
 }
-.gap{
+.gapbetween2{
 /*    background-color: rebeccapurple;*/
     display: inline-block;
     width:10%;
@@ -185,4 +185,19 @@ h3{
     width: 30px; 
     display: inline-block;
     vertical-align: bottom;
+}
+.boxtype3{
+    border-radius: 15px;
+    margin: auto;
+    width:26.6%;
+    background-image:  url("../back_logo/pp.jpg");
+    background-size: cover;
+    display: inline-block;
+    padding: 5px;
+}
+.gapbetween3{
+    width:4.5%;
+    display: inline-block;
+    margin: auto;
+    background-color: orangered;
 }
