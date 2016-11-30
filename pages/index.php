@@ -116,7 +116,7 @@
                 <div class="maindivofhome">
                     <div class="box1middle">
                         <h3>UPDATE</h3>
-                        <p> montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem  penatibus et magnis dis parturient.
+                        <p> Sign up for Star Alert Emergency Notification System, which provides immediate emergency communications if a situation were to occur on WSU's campus.
                         </p>
                     </div>
                     <div class="gap">
@@ -124,7 +124,7 @@
                     </div>
                     <div class="box2middle">
                         <h3>EXTRA</h3>
-                    <p> montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem  penatibus et magnis dis parturient.
+                    <p> Winona State University has been named a Military Friendly School for 2016, according to Victory Media’s 2016 guide to Military Friendly Schools.
                         </p>
                     </div>
                 </div>
@@ -134,7 +134,7 @@
                 
             <div class="maindivofhome">
                     <div class="box1middle">
-                        <img class ="imagelast2" src="../icon/csclub.png" alt="csclublogo" >
+                <a href="http://www.wsucs.club/"><img class ="imagelast2" src="../icon/csclub.png" alt="csclublogo" ></a>
                         <h3>CS CLUB</h3>
                     <p> 175 W Mark St, Winona, <br>
                         Winona State University<br>
@@ -142,7 +142,7 @@
                         Winona MN 55987<br>
                         507.457.5385</p>
                     </div>
-                
+           
                     <div class="gap"></div>
                 
                     <div class="box2middle">
