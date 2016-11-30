@@ -96,7 +96,7 @@
         </script>
 	</head>
 	<body>
-		<div id="wrapper">
+	
 			<header>
 				<div id="header_div"></div>
 			</header>
@@ -112,12 +112,41 @@
             <img src="imgtest/ashera.jpg" id="S2" class="slide">
             <img src="imgtest/bolas.png" id="S3" class="slide">
 </div>  
-<!--            <p id=testing>yo</p>-->
+
+                <div class="maindivofhome">
+                    <div class="box1middle">
+                        <h3>UPDATE</h3>
+                        <p> montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem  penatibus et magnis dis parturient.
+                        </p>
+                    </div>
+                    <div id="gap">
+<!--                        <p></p>-->
+                    </div>
+                    <div class="box2middle">
+                        <h3>EXTRA</h3>
+                    <p> montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem  penatibus et magnis dis parturient.
+                        </p>
+                    </div>
+                </div>
+                <br>
+            <div class="maindivofhome">
+                    <div class="box1">
+                        <p> montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem  penatibus et magnis dis parturient.
+                        </p>
+                    </div>
+                
+                    <div class="box2">
+                    <p> montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem  penatibus et magnis dis parturient.
+                        </p>
+                    </div>
+
+            </div>
+
         </main>
 			<footer>
 				<div id="footer_div"></div>
 			</footer>
-		</div>
+	
 	</body>
 </html>
 

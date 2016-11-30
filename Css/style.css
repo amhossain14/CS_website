@@ -124,3 +124,57 @@ footer p {
 .block .panel.shown {
     display:block;
 }
+
+.maindivofhome{
+/*
+    background-image:  url("../back_logo/pp.jpg");
+    background-size: cover;
+*/
+    width: 80%;
+    background-color: aqua;
+    text-align: center;
+    align-content: center;
+    padding: 10px;
+    vertical-align: bottom;
+    margin: auto;
+}
+#gap{
+/*    background-color: rebeccapurple;*/
+    display: inline-block;
+    width:10%;
+    margin:auto;
+}
+.box1middle{
+    background-image:  url("../back_logo/pp.jpg");
+    background-size: cover;
+    margin: auto;
+    width: 40%;
+    background-color: red;
+    display: inline-block;
+    text-align: center;
+    align-content: center;
+    padding: 5px;
+    padding-right: 20px;
+    border-radius: 15px;
+
+}
+.box2middle{
+    background-image:  url("../back_logo/pp.jpg");
+    background-size: cover;
+    margin: auto;
+    width: 40%;
+    background-color: greenyellow;
+    display: inline-block;
+    text-align: center;
+    align-content: center;
+    padding: 5px;
+    padding-left: 20px;
+        border-radius: 15px;
+}
+h3{
+    margin: auto;
+    width: 20%;
+    border-style: dotted;
+  align-content: center;
+    text-align: center;
+}
