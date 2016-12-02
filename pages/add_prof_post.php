@@ -29,6 +29,8 @@
 			file_put_contents($info, $_POST['info']);
 			file_put_contents($name, $_POST['first']." ".$_POST['last']);
 			
+			copy(, $output_folder);
+			
 			header("Location: admin.html");
 			
 			?>

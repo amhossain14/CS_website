@@ -21,20 +21,20 @@
 			<main>
                 
                 <?php    
-            $facdir = scandir('../faculty'); //will put into array
+            $facdir = file("../faculty/faculty.txt"); //will put into array
             $faccount = count($facdir);   //  will count how many are there
                  
                     $toggle = 1;
                 
-                for($i=2; $i<$faccount; $i++){
+                for($i=0; $i<$faccount; $i++){
                     
                     $parent ="../faculty/";
                     $namefile="/name.txt";
                     $infofile="/info.txt";
 					$hoursfile="/hours.txt";
                     
-                    $nameprint= file_get_contents("$parent$facdir[$i]$namefile")."<br>";
-                    $infoprint= file_get_contents("$parent$facdir[$i]$infofile")."<br>";
+                    $nameprint= file_get_contents("$parent".chop($facdir[$i])."$namefile")."<br>";
+                    $infoprint= file_get_contents("$parent".chop($facdir[$i])."$infofile")."<br>";
                     
                     if( $toggle===1){
                         ?>
