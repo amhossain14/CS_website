@@ -41,6 +41,7 @@
                     
                     if( $toggle===1){
                         ?>
+<<<<<<< HEAD
 						<div class="sections">
 							<div class="paragraph">	
 								<h3><?= $nameprint?></h3><br><p><?=$infoprint?></p>
@@ -103,9 +104,29 @@
 								<img src="<?=$parent.$facdir[$i]?>/circle_tra.png" alt="pic" >
 							</div>
 						<br></div>
+=======
+            <div class="block">
+                <div class="sections">
+                    <div class="paragraph">	
+						<p> <?= $nameprint?> <br> <?=$infoprint?></p>
+                    </div>
+					<div class="image">
+						<img src="<?=$parent.$facdir[$i]?>/circle_tra.png" alt="pic" >
+					</div>
+                </div>
+                    <div class="paragraph">	
+						<p> <?= $nameprint?> <br> <?=$infoprint?></p>
+                    </div>
+           
+                <div class="paragraph">	
+						<p> <?= $nameprint?> <br> <?=$infoprint?></p>
+                </div>
+			<br></div>
+>>>>>>> origin/master
                         
                         <?php
                         
+<<<<<<< HEAD
                         $toggle++ ;
                    } 
 				   else{ ?>
@@ -167,6 +188,30 @@
 						</div>
 					<br></div>
                 <?php 
+=======
+                    <div class="block">
+
+                <div class="sections">
+                    <div class="image">
+						<img src="<?=$parent.$facdir[$i]?>/circle_tra.png" alt="pic" >
+					</div>
+					<div class="paragraph">	
+						<p> <?= $nameprint?> <br> <?=$infoprint?></p>
+                    </div>	
+                </div>
+                <div class="paragraph">	
+						<p> <?= $nameprint?> <br> <?=$infoprint?></p>
+                </div>
+            </div>
+                <div class="paragraph">	
+						<p> <?= $nameprint?> <br> <?=$infoprint?></p>
+                </div>
+            </div>
+			<br></div>
+    
+                <?php
+                        print"<br>";
+>>>>>>> origin/master
                         $toggle-- ;
 						}
                 } 
