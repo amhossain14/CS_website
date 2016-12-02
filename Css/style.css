@@ -194,6 +194,7 @@ footer p {
     padding: 5px;
 /*    padding-right: 20px;*/
     border-radius: 15px;
+    height: 300px:
 
 }
 .box2middle{
@@ -208,6 +209,7 @@ footer p {
     padding: 5px;
 /*    padding-left: 20px;*/
     border-radius: 15px;
+    height: 300px:
 }
 h3{
     margin: auto;
@@ -232,6 +234,8 @@ h3{
     background-size: cover;
     display: inline-block;
     padding: 5px;
+    height:200px;
+    overflow:hidden;
 }
 .gapbetween3{
     width:4.5%;

@@ -90,43 +90,55 @@
             <img src="../Slidesimg/slides(2).png " id="S2" class="slide">
             <img src="../Slidesimg/slides(3).png" id="S3" class="slide">
 </div>  
+                
+             <?php    
+                    $parent = "../News_update/"; //is a string
+                    $news1file = "news1.txt";
+                    $news2file = "news2.txt";
+                    $news3file = "news3.txt";    
+                    $updatefile = "update.txt";
+                    $extrafile ="extra.txt";
+                
+                    $news1print = file_get_contents("$parent$news1file")."<br>";
+                    $news2print = file_get_contents("$parent$news2file")."<br>";
+                    $news3print = file_get_contents("$parent$news3file")."<br>";
+                    $updateprint = file_get_contents("$parent$updatefile")."<br>";
+                    $extraprint = file_get_contents("$parent$extrafile")."<br>";
+                    ?>
+                
                 <div class="maindivofhome">
                 
                     <div class="box1middle">
                         <h3>UPDATE</h3>
-                        <p> Sign up for Star Alert Emergency Notification System, which provides immediate emergency communications if a situation were to occur on WSU's campus.
-                        </p>
+                         <p> <?= $updateprint?> </p>
                     </div>
                     <div class="gapbetween2">
 <!--                        <p></p>-->
                     </div>
                     <div class="box2middle">
                         <h3>EXTRA</h3>
-                    <p> Winona State University has been named a Military Friendly School for 2016, according to Victory Media’s 2016 guide to Military Friendly Schools.
-                        </p>
+                    <p> <?= $extraprint ?> </p>
                     </div>
                 </div>    <!--  Main div ends with first part -->
                 <br>
                 
                 <!--div with 3 divs Start -->
+                
              <div class="maindivofhome">
                 
                     <div class="boxtype3">
                         <h3>NEWS#1</h3>
-                        <p> Sign up for Star Alert Emergency Notification System, which provides immediate emergency communications if a situation were to occur on WSU's campus.
-                        </p>
+                        <p> <?= $news1print?> </p>
                     </div>
                  <div class="gapbetween3"></div>
                     <div class="boxtype3">
                    <h3>NEWS#2</h3>
-                        <p> Sign up for Star Alert Emergency Notification System, which provides immediate emergency communications if a situation were to occur on WSU's campus.
-                        </p>
+                        <p> <?= $news2print?> </p>
                     </div>
                   <div class="gapbetween3"></div>
                     <div class="boxtype3">
                         <h3>NEWS#3</h3>
-                    <p> Winona State University has been named a Military Friendly School for 2016, according to Victory Media’s 2016 guide to Military Friendly Schools.
-                        </p>
+                    <p><?= $news3print?> </p>
                     </div>
                 </div>   
                  <!--div with 3 divs ends -->
