@@ -31,6 +31,7 @@
                     $parent ="../faculty/";
                     $namefile="/name.txt";
                     $infofile="/info.txt";
+					$hoursfile="/hours.txt";
                     
                     $nameprint= file_get_contents("$parent$facdir[$i]$namefile")."<br>";
                     $infoprint= file_get_contents("$parent$facdir[$i]$infofile")."<br>";
