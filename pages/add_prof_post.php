@@ -29,7 +29,7 @@
 			file_put_contents($info, $_POST['info']);
 			file_put_contents($name, $_POST['first']." ".$_POST['last']);
 			
-			copy(, $output_folder);
+			copy('../icon/circle_tra.png', $output_folder.'circle_tra.png');
 			
 			header("Location: admin.html");
 			
