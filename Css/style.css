@@ -1,4 +1,4 @@
-@media only screen and (min-width: 250px) {
+@media only screen and (min-width: 250px) {  /* For 250px  for mobile phone*/
      body{
     font-family: "Cuprum";
     width: 100%;
@@ -11,11 +11,13 @@
 	padding:30px;
 }
 nav{
+    width: 100%;
     text-align: right;
     padding-right: 50px;
 }
 nav a {
 /*    text-align: right;*/
+    width: 100%;
     padding:10px;
     text-decoration: none;
     font-size: 120%;
@@ -73,9 +75,11 @@ table{
 /*    for searh bar*/
 }
 footer{
+/*
 	background-image:  url("../back_logo/Footer.png");
 	background-repeat: no-repeat;
 	background-size:cover;
+*/
 /*	padding: 80px 30px;*/
 	bottom:0;
 }
@@ -86,9 +90,9 @@ footer p {
 	font-size:110%;
 	font-weight:Bold;
 	text-align:center;
-	width:20%;
+	width:70%;
 	margin:auto;
-	padding:5px;
+	padding:30px;
     text-decoration: none;
 	
 }
@@ -149,8 +153,8 @@ footer p {
         align-content: center;
 }
 #slidemachine {
-      border-radius:10px;
-    padding: 20px;
+/*    border-radius:10px;*/
+    padding: 15px;
     margin: auto;
     width: 100%;
 /*    height: 90%;*/
@@ -158,6 +162,7 @@ footer p {
     width: 600px;
    height: 400px;
 */
+    
         overflow: hidden;
 /*     margin: 30px auto;*/
         text-align: center;
@@ -247,8 +252,8 @@ h3{
 }
 }
 
-
-@media only screen and (min-width: 600px) {
+ 
+@media only screen and (min-width: 600px) {  /* For 600px for ipad */
     body{
     font-family: "Cuprum";
     width: 100%;
@@ -322,9 +327,11 @@ table{
 /*    for searh bar*/
 }
 footer{
+/*
 	background-image:  url("../back_logo/Footer.png");
 	background-repeat: no-repeat;
 	background-size:cover;
+*/
 /*	padding: 80px 30px;*/
 	bottom:0;
 }
@@ -497,8 +504,8 @@ h3{
 }
 
 
-@media only screen and (min-width: 768px) {
-body{
+@media only screen and (min-width: 768px) {  /* For 768px for desktop */
+    body{
     font-family: "Cuprum";
     width: 100%;
     background-image:url("../back_logo/Backgroundbody.jpg");
@@ -570,26 +577,33 @@ table{
 .searchnav{
 /*    for searh bar*/
 }
+    footer img {
+  width: 100%;
+        height:40px;
+    }
 footer{
-	background-image:  url("../back_logo/Footer.png");
-	background-repeat: no-repeat;
-	background-size:cover;
-/*	padding: 80px 30px;*/
-	bottom:0;
-}
+
+    margin-top: 10px;
+    }
+    
 footer p {
-/*background-image:  url("../Back&logo/Footer.png");*/
-/*    background-size: cover;*/
+    background-color: aliceblue;
 	color:black;
 	font-size:110%;
 	font-weight:Bold;
 	text-align:center;
-	width:20%;
+	width:40%;
 	margin:auto;
-	padding:5px;
-    text-decoration: none;
+	padding:10px;
+/*vertical-align: baseline;*/
 	
 }
+    
+footer p a{
+        text-decoration: none;
+        color: black;
+    }
+    
 .block{
 	padding-left: 15px;
 	padding-right: 15px;
@@ -647,7 +661,7 @@ footer p {
         align-content: center;
 }
 #slidemachine {
-      border-radius:10px;
+/*      border-radius:10px;*/
     padding: 20px;
     margin: auto;
     width: 70%;

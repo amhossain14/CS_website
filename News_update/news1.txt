@@ -1,3 +1,1 @@
-AAAAAAAAAAAAAAA AAAAAAAAAAAAA AAAAAAAAA AAAAAAAAAAAAAAAAAAAA AAAAAAAAAAAAAAAA AAAAAAAAAAAAAAAAAAAAAAAAA
-BBBBBBB BBBBBB BBBBBBBB BBBBBBB BBBBBBBBB BBBBBBBBBBBBB BBBBBBBBBBBBB BBBBBBBBBBB
-BBBBBBBB BBBBBBBB BBBBBBBBCCCC CCCCCC CCCCC C C C CCCCC CCCCC CCCC CCCC CCCC CCCCC  CCCCCCC CCCC CCCCCC CCCCCCCCCC CCCCCCC CCCCC CCCCC CCCCC CCCC
+Local Hack Day (or LHD for short) is a 12 hour mini-hackathon that takes place on school campuses around the world. It’s designed to be a gentle introduction to hackathons that celebrates the local community. On the same date, different LHD will be held accross the world. Wanna know more?
