@@ -32,81 +32,145 @@
                     $namefile="/name.txt";
                     $infofile="/info.txt";
 					$hoursfile="/hours.txt";
+					
+					$facdirchop = chop($facdir[$i]);
                     
                     $nameprint= file_get_contents("$parent".chop($facdir[$i])."$namefile")."<br>";
                     $infoprint= file_get_contents("$parent".chop($facdir[$i])."$infofile")."<br>";
+					$nameprint= str_replace(array("\r", "\n"), "",$nameprint);
                     
                     if( $toggle===1){
                         ?>
-            <div class="block">
-				<ul class="tabs">
-					<li rel="panel1" class="shown">General</li>
-					<li rel="panel2">Office Hours</li>
-					<li rel="panel3">Contact</li>
-				</ul>
-			<div id="panel1" class="panel shown">
-                <div class="sections">
-                    <div class="paragraph">	
-						<p> <?= $nameprint?> <br> <?=$infoprint?></p>
-                    </div>
-					<div class="image">
-						<img src="<?=$parent.$facdir[$i]?>/circle_tra.png" alt="pic" >
-					</div>
-            </div>
-            <div id="panel2" class="panel">
-                <div class="paragraph">	
-						<p> <?= $nameprint?> <br> <?=$infoprint?></p>
-                    </div>
-            </div>
-            <div id="panel3" class="panel">
-               <div class="paragraph">	
-						<p> <?= $nameprint?> <br> <?=$infoprint?></p>
-                    </div>
-            </div>
-                
-                
-               
-			<br></div>
+						<div class="sections">
+							<div class="paragraph">	
+								<h3><?= $nameprint?></h3><br><p><?=$infoprint?></p>
+								<?php if(file_exists("$parent$facdirchop$hoursfile")){
+								$hoursprint= file("$parent$facdirchop$hoursfile"); ?>
+								<h4><?php print $nameprint."Office Hours" ?></h4>
+								<table>
+									<tr>
+										<th>Monday</th>
+										<th>Tuesday</th>
+										<th>Wednesday</th>
+										<th>Thursday</th>
+										<th>Friday</th>
+									</tr>
+									<tr rowspan="10">
+										<?php for($j = 0; $j < 10; $j+=2){ ?>
+												<td>
+												<?php 
+												for($k = 0; $k < count($hoursprint)-1; $k+=2){
+													$day = $hoursprint[$k];
+													switch($j){
+														case 0: 
+														if(chop($day) == "mon"){
+															print $hoursprint[$k+1]."<br/>";
+														}
+														break;
+														case 2: 
+														if(chop($day) == "tue"){
+															print $hoursprint[$k+1]."<br/>";
+														}
+														break;
+														case 4: 
+														if(chop($day) == "wed"){
+															print $hoursprint[$k+1]."<br/>";
+														}
+														break;
+														case 6: 
+														if(chop($day) == "thu"){
+															print $hoursprint[$k+1]."<br/>";
+														}
+														break;
+														case 8: 
+														if(chop($day) == "fri"){
+															print $hoursprint[$k+1]."<br/>";
+														}
+														break;
+													}
+												}
+												?>
+												</td>
+										<?php } ?>
+									</tr>
+								</table>
+                        <?php }
+						else{ ?>
+							<h4><?php print $nameprint." has not entered office hours for this semester" ?></h4>
+						<?php } ?>
+							</div>
+							<div class="image">
+								<img src="<?=$parent.$facdir[$i]?>/circle_tra.png" alt="pic" >
+							</div>
+						<br></div>
                         
                         <?php
-                        print "<br>";
-                        $toggle++ ;
-                   } else{ ?>
                         
-                    <div class="block">
-				<ul class="tabs">
-					<li rel="panel1" class="shown">General</li>
-					<li rel="panel2">Office Hours</li>
-					<li rel="panel3">Contact</li>
-				</ul>
-			<div id="panel1" class="panel shown">
-                <div class="sections">
-                    <div class="image">
-						<img src="<?=$parent.$facdir[$i]?>/circle_tra.png" alt="pic" >
-					</div>
-					<div class="paragraph">	
-						<p> <?= $nameprint?> <br> <?=$infoprint?></p>
-                    </div>
-					
-            </div>
-            <div id="panel2" class="panel">
-                <div class="paragraph">	
-						<p> <?= $nameprint?> <br> <?=$infoprint?></p>
-                    </div>
-            </div>
-            <div id="panel3" class="panel">
-               <div class="paragraph">	
-						<p> <?= $nameprint?> <br> <?=$infoprint?></p>
-                    </div>
-            </div>
-			<br></div>
-    
-                <?php
-                        print"<br>";
+                        $toggle++ ;
+                   } 
+				   else{ ?>
+					<div class="sections">
+						<div class="image">
+							<img src="<?=$parent.$facdir[$i]?>/circle_tra.png" alt="pic" >
+						</div>
+						<div class="paragraph">	
+							<h3><?= $nameprint?></h3><br><p><?=$infoprint?></p>
+						<?php if(file_exists("$parent$facdirchop$hoursfile")){
+								$hoursprint= file("$parent$facdirchop$hoursfile"); ?>
+								<h4><?php print $nameprint." Office Hours" ?></h4>
+								<table>
+									<tr>
+										<th>Monday</th>
+										<th>Tuesday</th>
+										<th>Wednesday</th>
+										<th>Thursday</th>
+										<th>Friday</th>
+									</tr>
+									<tr rowspan="10">
+										<?php for($j = 0; $j < 10; $j+=2){ ?>
+												<td>
+												<?php 
+												for($k = 0; $k < count($hoursprint)-1; $k+=2){
+													$day = $hoursprint[$k];
+													switch($j){
+														case 0: 
+														if(chop($day) == "mon"){
+															print $hoursprint[$k+1]."<br/>";
+														}
+														break;
+														case 2: 
+														if(chop($day) == "tue"){
+															print $hoursprint[$k+1]."<br/>";
+														}
+														break;
+														case 4: 
+														if(chop($day) == "wed"){
+															print $hoursprint[$k+1]."<br/>";
+														}
+														break;
+														case 6: 
+														if(chop($day) == "thu"){
+															print $hoursprint[$k+1]."<br/>";
+														}
+														break;
+														case 8: 
+														if(chop($day) == "fri"){
+															print $hoursprint[$k+1]."<br/>";
+														}
+														break;
+													}
+												} ?>
+												</td>
+										<?php } ?>
+									</tr>
+								</table>
+						</div>
+					<br></div>
+                <?php 
                         $toggle-- ;
-                    }
-                }
-    ?>
+						}
+                } 
+			} ?>
 			</main>
 			<footer>
 				<div id="footer_div"></div>

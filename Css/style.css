@@ -41,7 +41,12 @@ header img {
 br{
     clear:both;
 }
-
+table, th, td{
+	border: 1px solid #4B08A1;
+}
+table{
+	width: 100%;
+}
 .paragraph{
     font-size:100%;
     width:60%;
