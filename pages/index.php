@@ -73,6 +73,7 @@
         </script>
 	</head>
 	<body>
+	
 			<header>
 				<div id="header_div"></div>
 			</header>
@@ -85,8 +86,8 @@
                 <button id="rbutton" onclick="next();">RIGHT</button>
 <div id="slidemachine">
 
-           <img src="../Slidesimg/slides(2)1.png"  id="S1" class="slide">
-            <img src="../Slidesimg/slides(1)2.jpg" id="S2" class="slide">
+           <img src="../Slidesimg/slides(1).jpg"  id="S1" class="slide">
+            <img src="../Slidesimg/slides(2).png " id="S2" class="slide">
             <img src="../Slidesimg/slides(3).png" id="S3" class="slide">
 </div>  
                 
