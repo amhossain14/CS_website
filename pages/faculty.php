@@ -39,12 +39,6 @@
                     if( $toggle===1){
                         ?>
             <div class="block">
-				<ul class="tabs">
-					<li rel="panel1" class="shown">General</li>
-					<li rel="panel2">Office Hours</li>
-					<li rel="panel3">Contact</li>
-				</ul>
-			<div id="panel1" class="panel shown">
                 <div class="sections">
                     <div class="paragraph">	
 						<p> <?= $nameprint?> <br> <?=$infoprint?></p>
@@ -52,20 +46,14 @@
 					<div class="image">
 						<img src="<?=$parent.$facdir[$i]?>/circle_tra.png" alt="pic" >
 					</div>
-            </div>
-            <div id="panel2" class="panel">
+                </div>
+                    <div class="paragraph">	
+						<p> <?= $nameprint?> <br> <?=$infoprint?></p>
+                    </div>
+           
                 <div class="paragraph">	
 						<p> <?= $nameprint?> <br> <?=$infoprint?></p>
-                    </div>
-            </div>
-            <div id="panel3" class="panel">
-               <div class="paragraph">	
-						<p> <?= $nameprint?> <br> <?=$infoprint?></p>
-                    </div>
-            </div>
-                
-                
-               
+                </div>
 			<br></div>
                         
                         <?php
@@ -74,30 +62,22 @@
                    } else{ ?>
                         
                     <div class="block">
-				<ul class="tabs">
-					<li rel="panel1" class="shown">General</li>
-					<li rel="panel2">Office Hours</li>
-					<li rel="panel3">Contact</li>
-				</ul>
-			<div id="panel1" class="panel shown">
+
                 <div class="sections">
                     <div class="image">
 						<img src="<?=$parent.$facdir[$i]?>/circle_tra.png" alt="pic" >
 					</div>
 					<div class="paragraph">	
 						<p> <?= $nameprint?> <br> <?=$infoprint?></p>
-                    </div>
-					
-            </div>
-            <div id="panel2" class="panel">
+                    </div>	
+                </div>
                 <div class="paragraph">	
 						<p> <?= $nameprint?> <br> <?=$infoprint?></p>
-                    </div>
+                </div>
             </div>
-            <div id="panel3" class="panel">
-               <div class="paragraph">	
+                <div class="paragraph">	
 						<p> <?= $nameprint?> <br> <?=$infoprint?></p>
-                    </div>
+                </div>
             </div>
 			<br></div>
     

@@ -3,27 +3,28 @@ function init(){
 	var add = document.getElementById("add");
 	var change = document.getElementById("change");
 	loadContent();
-	$(function() {
 
-    $('.block .tabs li').on('click', function() {
+        $(function() {
 
-        var $panel = $(this).closest('.block'); //this will allow a panel for each professor.
+    $('.tab-panels .tabs li').on('click', function() {
 
-        $panel.find('.tabs li.shown').removeClass('shown');
-        $(this).addClass('shown');
+        var $panel = $(this).closest('.tab-panels');
+
+        $panel.find('.tabs li.active').removeClass('active');
+        $(this).addClass('active');
 
         //figure out which panel to show
-        var currentPanel = $(this).attr('rel');
+        var panelToShow = $(this).attr('rel');
 
         //hide current panel
-        $panel.find('.panel.shown').slideUp(100, showNextPanel);
+        $panel.find('.panel.active').slideUp(300, showNextPanel);
 
-        //show clicked panel
+        //show next panel
         function showNextPanel() {
-            $(this).removeClass('shown');
+            $(this).removeClass('active');
 
-            $('#'+currentPanel).slideDown(200, function() {
-                $(this).addClass('shown');
+            $('#'+panelToShow).slideDown(300, function() {
+                $(this).addClass('active');
             });
         }
     });
