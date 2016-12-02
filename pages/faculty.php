@@ -165,8 +165,6 @@
 						</div>
 					<br></div>
                 <?php 
-                    
-                        print"<br>";
                         $toggle-- ;
 						}
                 } 
