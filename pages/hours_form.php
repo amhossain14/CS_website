@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<title></title>
+		<title>Add Office Hours</title>
 		<script src="../js/script.js" type="text/javascript"></script>
 		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 		<link rel="stylesheet" href="../css/style.css">
@@ -68,6 +68,9 @@
 					
 					<input type="submit" id="submit_button" value="Add Window"> 
 				</form>
+				<form action="admin.html">
+						<input type="submit" value="Go Back To Admin Page"/>
+					</form>
 			</main>
 		</div>
 	</body>

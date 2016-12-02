@@ -27,7 +27,7 @@
 					file_put_contents($writefile, " \r\n", FILE_APPEND);
 				}
 			}
-			header("Location: hours_form.php");
+			header("Location: admin.html");
 			?>
 		</div>
 	</body>

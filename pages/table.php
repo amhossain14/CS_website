@@ -14,8 +14,6 @@
                 <?php    
             $facdir = file("../faculty/faculty.txt"); //will put into array
             $faccount = count($facdir);   //  will count how many are there
-                 
-                    $toggle = 1;
                 
                 for($i=0; $i<$faccount; $i++){
                     
@@ -79,6 +77,9 @@
 							</tr>
 						</table>
                         <?php }
+						else{
+							
+						}
                 } ?>
 			</main>
 		</div>
