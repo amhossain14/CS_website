@@ -43,7 +43,7 @@
             }
             
             function hide() {
-                $("#S"+slideNum).fadeOut(500);
+                $("#S"+slideNum).hide();
             }
             
             function next() {
@@ -85,11 +85,11 @@
                 <button id="lbutton" onclick="prev();">LEFT</button>
                 <button id="rbutton" onclick="next();">RIGHT</button>
 <div id="slidemachine">
+
            <img src="../Slidesimg/slides(1).jpg"  id="S1" class="slide">
             <img src="../Slidesimg/slides(2).png " id="S2" class="slide">
             <img src="../Slidesimg/slides(3).png" id="S3" class="slide">
 </div>  
-
                 <div class="maindivofhome">
                 
                     <div class="box1middle">
@@ -112,19 +112,19 @@
              <div class="maindivofhome">
                 
                     <div class="boxtype3">
-                        <h3>UPDATE</h3>
+                        <h3>NEWS#1</h3>
                         <p> Sign up for Star Alert Emergency Notification System, which provides immediate emergency communications if a situation were to occur on WSU's campus.
                         </p>
                     </div>
                  <div class="gapbetween3"></div>
                     <div class="boxtype3">
-                   <h3>UPDATE</h3>
+                   <h3>NEWS#2</h3>
                         <p> Sign up for Star Alert Emergency Notification System, which provides immediate emergency communications if a situation were to occur on WSU's campus.
                         </p>
                     </div>
                   <div class="gapbetween3"></div>
                     <div class="boxtype3">
-                        <h3>EXTRA</h3>
+                        <h3>NEWS#3</h3>
                     <p> Winona State University has been named a Military Friendly School for 2016, according to Victory Media’s 2016 guide to Military Friendly Schools.
                         </p>
                     </div>
