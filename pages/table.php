@@ -37,7 +37,7 @@
 								<th>Thursday</th>
 								<th>Friday</th>
 							</tr>
-							<tr rowspan="5">
+							<tr rowspan="10">
 								<?php for($j = 0; $j < 10; $j+=2){ ?>
 										<td>
 										<?php 
