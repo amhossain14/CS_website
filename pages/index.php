@@ -11,7 +11,8 @@
         <script>
             var slideNum = 1;
             var totalSlides = 3;
-            var time = 3000; //time for each slide
+            var time = 1000; //time for each slide
+            var paused = false;
  
             $(function() {
 
@@ -19,13 +20,32 @@
                 run();
                 
                $(".slide").hover(function(){
-                stop();
+                if (paused == false) {stop();}
                 }, function(){
-                run();
+                if (paused == false) {run();}
+               
     });
+            
+                
+                $("#pbutton").click(function() {
+                    pausetoggle();
+                    });
                 
 });
-        
+            
+            
+            function pausetoggle() {
+                if (paused == false) {
+                    paused = true;
+                    stop();
+                    
+                }
+                else {
+                    paused = false;
+                    run();
+                }
+                
+            }
             
             function numup() {
                 if (slideNum == totalSlides) {slideNum = 1;}
@@ -33,19 +53,33 @@
 
             }
             
-             function numdown() {
+            function numdown() {
                 if (slideNum == 1) {nextSlide = totalSlides;}
                 else {slideNum = slideNum - 1;}
             }
             
             function show() {
                 $("#S"+slideNum).fadeIn(500);
+                hideothers();
             }
             
             function hide() {
                 $("#S"+slideNum).hide();
             }
             
+            function hideothers() {
+                var i = 0;
+                var x = totalSlides + 1;
+                while (i <= totalSlides) {
+                    i++;
+                if (i != slideNum){
+                       $("#S"+i).hide();
+                    }
+                    
+                }
+                
+            }
+    
             function next() {
                 stop();
                 hide();
@@ -53,7 +87,6 @@
                 show();
                 run()
             }
-            
             function prev() {
                 stop();
                 hide();
@@ -63,12 +96,10 @@
             }
             
             function run() {
-                 loop = setInterval(next, 3000);
+                 loop = setInterval(next, time);
             }
             
             function stop() {window.clearInterval(loop);}
-            
-                
             
         </script>
 	</head>
@@ -84,6 +115,7 @@
 			<main>  
                 <button id="lbutton" onclick="prev();">LEFT</button>
                 <button id="rbutton" onclick="next();">RIGHT</button>
+                <button id="pbutton" onclick="next();">PAUSE</button>
 <div id="slidemachine">
 
            <img src="../Slidesimg/slides(1).jpg"  id="S1" class="slide">
