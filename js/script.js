@@ -1,4 +1,5 @@
 window.onload = init;
+
 function init(){
 	var add = document.getElementById("add");
 	var change = document.getElementById("change");
@@ -10,39 +11,32 @@ function init(){
         var totalSlides = 3;
         var time = 1000; //time for each slide
         var paused = false;
+
            function pausetoggle() {
                 if (paused == false) {
                     paused = true;
                     stop();
-                    
                 }
                 else {
                     paused = false;
                     run();
-                }
-                
+                }    
             }
-            
             function numup() {
                 if (slideNum == totalSlides) {slideNum = 1;}
                 else {slideNum = slideNum + 1;}
-
             }
-            
             function numdown() {
                 if (slideNum == 1) {nextSlide = totalSlides;}
                 else {slideNum = slideNum - 1;}
             }
-            
             function show() {
                 $("#S"+slideNum).fadeIn(500);
                 hideothers();
             }
-            
             function hide() {
                 $("#S"+slideNum).hide();
             }
-            
             function hideothers() {
                 var i = 0;
                 var x = totalSlides + 1;
@@ -72,7 +66,7 @@ function init(){
             function run() {
                  loop = setInterval(next, time);
             }
-            
+
             function stop() {window.clearInterval(loop);}
 
 function loadContent(){

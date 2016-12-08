@@ -9,25 +9,18 @@
         <link href="https://fonts.googleapis.com/css?family=Bree+Serif|Cuprum:400,400i,700,700i" rel="stylesheet">
 
         <script>
-                   $(function() {
-
+            $(function() {
                 show();
                 run();
-                
                $(".slide").hover(function(){
                 if (paused == false) {stop();}
                 }, function(){
-                if (paused == false) {run();}
-               
+                if (paused == false) {run();}       
     });
-            
-                
                 $("#pbutton").click(function() {
                     pausetoggle();
-                    });
-                
+                    });          
 });
-   
         </script>
 	</head>
 	<body>
