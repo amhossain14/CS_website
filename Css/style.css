@@ -5,13 +5,16 @@
     width: 100%;
     background-image:url("../back_logo/Backgroundbody.jpg");
     background-size: cover;
+         padding: 2px;
 }
+
 .sections{
     width :80%;
 	margin: auto;
 	padding:30px;
 }
 nav{
+    width: 100;
     text-align: right;
     padding-right: 50px;
 }
@@ -62,9 +65,10 @@ table{
 }
 
 .image{
-    width:30%;
+    width:100%;
     display:inline-block;
     text-align: center;
+    padding: 10px;
     vertical-align: bottom;
 }
 
@@ -75,6 +79,8 @@ table{
 /*    for searh bar*/
 }
 footer{
+    align-content: center;
+    	text-align:center;
     width: 90%;
 	background-image:  url("../back_logo/Footer.png");
 	background-repeat: no-repeat;
@@ -585,6 +591,7 @@ footer{
 	padding: 80px 30px;
 	bottom:0;
 */
+    width: 100%
     background-repeat: no-repeat;
 	background-size:cover;
 /*	padding: 50px 20px;*/
