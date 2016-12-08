@@ -9,12 +9,7 @@
         <link href="https://fonts.googleapis.com/css?family=Bree+Serif|Cuprum:400,400i,700,700i" rel="stylesheet">
 
         <script>
-            var slideNum = 1;
-            var totalSlides = 3;
-            var time = 1000; //time for each slide
-            var paused = false;
- 
-            $(function() {
+                   $(function() {
 
                 show();
                 run();
@@ -32,75 +27,7 @@
                     });
                 
 });
-            
-            
-            function pausetoggle() {
-                if (paused == false) {
-                    paused = true;
-                    stop();
-                    
-                }
-                else {
-                    paused = false;
-                    run();
-                }
-                
-            }
-            
-            function numup() {
-                if (slideNum == totalSlides) {slideNum = 1;}
-                else {slideNum = slideNum + 1;}
-
-            }
-            
-            function numdown() {
-                if (slideNum == 1) {nextSlide = totalSlides;}
-                else {slideNum = slideNum - 1;}
-            }
-            
-            function show() {
-                $("#S"+slideNum).fadeIn(500);
-                hideothers();
-            }
-            
-            function hide() {
-                $("#S"+slideNum).hide();
-            }
-            
-            function hideothers() {
-                var i = 0;
-                var x = totalSlides + 1;
-                while (i <= totalSlides) {
-                    i++;
-                if (i != slideNum){
-                       $("#S"+i).hide();
-                    }
-                    
-                }
-                
-            }
-    
-            function next() {
-                stop();
-                hide();
-                numup();
-                show();
-                run()
-            }
-            function prev() {
-                stop();
-                hide();
-                numdown();
-                show();
-                run();
-            }
-            
-            function run() {
-                 loop = setInterval(next, time);
-            }
-            
-            function stop() {window.clearInterval(loop);}
-            
+   
         </script>
 	</head>
 	<body>

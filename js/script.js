@@ -3,35 +3,82 @@ function init(){
 	var add = document.getElementById("add");
 	var change = document.getElementById("change");
 	loadContent();
+    }
 
-        $(function() {
 
-    $('.tab-panels .tabs li').on('click', function() {
+        var slideNum = 1;
+        var totalSlides = 3;
+        var time = 1000; //time for each slide
+        var paused = false;
+           function pausetoggle() {
+                if (paused == false) {
+                    paused = true;
+                    stop();
+                    
+                }
+                else {
+                    paused = false;
+                    run();
+                }
+                
+            }
+            
+            function numup() {
+                if (slideNum == totalSlides) {slideNum = 1;}
+                else {slideNum = slideNum + 1;}
 
-        var $panel = $(this).closest('.tab-panels');
+            }
+            
+            function numdown() {
+                if (slideNum == 1) {nextSlide = totalSlides;}
+                else {slideNum = slideNum - 1;}
+            }
+            
+            function show() {
+                $("#S"+slideNum).fadeIn(500);
+                hideothers();
+            }
+            
+            function hide() {
+                $("#S"+slideNum).hide();
+            }
+            
+            function hideothers() {
+                var i = 0;
+                var x = totalSlides + 1;
+                while (i <= totalSlides) {
+                    i++;
+                if (i != slideNum){
+                       $("#S"+i).hide();
+                    }
+                }
+            }
+    
+            function next() {
+                stop();
+                hide();
+                numup();
+                show();
+                run()
+            }
+            function prev() {
+                stop();
+                hide();
+                numdown();
+                show();
+                run();
+            }
+            
+            function run() {
+                 loop = setInterval(next, time);
+            }
+            
+            function stop() {window.clearInterval(loop);}
 
-        $panel.find('.tabs li.active').removeClass('active');
-        $(this).addClass('active');
-
-        //figure out which panel to show
-        var panelToShow = $(this).attr('rel');
-
-        //hide current panel
-        $panel.find('.panel.active').slideUp(300, showNextPanel);
-
-        //show next panel
-        function showNextPanel() {
-            $(this).removeClass('active');
-
-            $('#'+panelToShow).slideDown(300, function() {
-                $(this).addClass('active');
-            });
-        }
-    });
-});
-}
 function loadContent(){
 	$("#header_div").load("../pages/header.html");
 	$("#nav_div").load("../pages/nav.html");
 	$("#footer_div").load("../pages/footer.html");
 }
+
+
