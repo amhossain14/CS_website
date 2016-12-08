@@ -45,7 +45,7 @@
 								<?php if(file_exists("$parent$facdirchop$hoursfile")){
 								$hoursprint= file("$parent$facdirchop$hoursfile"); ?>
 								<h4><?php print $nameprint."Office Hours" ?></h4>
-								<table>
+								<table  class="tablecss" >
 									<tr>
 										<th>Monday</th>
 										<th>Tuesday</th>
@@ -55,7 +55,7 @@
 									</tr>
 									<tr rowspan="10">
 										<?php for($j = 0; $j < 10; $j+=2){ ?>
-												<td>
+												<td  >
 												<?php 
 												for($k = 0; $k < count($hoursprint)-1; $k+=2){
 													$day = $hoursprint[$k];

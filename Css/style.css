@@ -2,7 +2,7 @@
     /*                                                            250px for mobile phone */
      body{
     font-family: "Cuprum";
-    width: 100%;
+    width: 98%;
     background-image:url("../back_logo/Backgroundbody.jpg");
     background-size: cover;
          padding: 2px;
@@ -52,9 +52,18 @@ table, th, td{
 	border: 1px solid #4B08A1;
 }
 table{
-	width: 100%;
+
+    width: 100%;
+    overflow:scroll;
 }
+/*
+.tablecss{
+    overflow-x:auto;
+        
+    }
+*/
 .paragraph{
+        border-radius: 15px;
     font-size:100%;
     width:60%;
     display:inline-block;
@@ -80,12 +89,12 @@ table{
 }
 footer{
     align-content: center;
-    	text-align:center;
-    width: 90%;
+    text-align:center;
+    width: 95%;
 	background-image:  url("../back_logo/Footer.png");
 	background-repeat: no-repeat;
 	background-size:cover;
-/*	padding: 80px 30px;*/
+	padding: 1px;
 	bottom:0;
 }
 footer p {
@@ -309,8 +318,9 @@ table{
 	width: 100%;
 }
 .paragraph{
+    border-radius: 15px;
     font-size:100%;
-    width:60%;
+    width:90%;
     display:inline-block;
     background-image:  url("../back_logo/pp.jpg");
     background-size: cover;
@@ -319,23 +329,26 @@ table{
 }
 
 .image{
-    width:30%;
+    padding: 10px;
+    width:50%;
     display:inline-block;
+     align-content: center;
     text-align: center;
     vertical-align: bottom;
 }
 
 .image img{
-    width:70%;
+    width:100%;
 }
 .searchnav{
 /*    for searh bar*/
 }
 footer{
-	background-image:  url("../back_logo/Footer.png");
-	background-repeat: no-repeat;
+background-image:  url("../back_logo/Footer.png");
+    width: 95%;
+    background-repeat: no-repeat;
 	background-size:cover;
-/*	padding: 80px 30px;*/
+    padding: 10px;
 	bottom:0;
 }
 footer p {
@@ -425,12 +438,7 @@ footer p {
 
 
 .maindivofhome{
-/*
-    background-image:  url("../back_logo/pp.jpg");
-    background-size: cover;
-*/
     width: 80%;
-/*    background-color: aqua;*/
     text-align: center;
     align-content: center;
     padding: 10px;
@@ -438,7 +446,6 @@ footer p {
     margin: auto;
 }
 .gapbetween2{
-/*    background-color: rebeccapurple;*/
     display: inline-block;
     width:10%;
     margin:auto;
@@ -448,12 +455,10 @@ footer p {
     background-size: cover;
     margin: auto;
     width: 40%;
-/*    background-color: red;*/
     display: inline-block;
     text-align: center;
     align-content: center;
     padding: 5px;
-/*    padding-right: 20px;*/
     border-radius: 15px;
     height: 300px:
 
@@ -463,7 +468,6 @@ footer p {
     background-size: cover;
     margin: auto;
     width: 40%;
-/*    background-color: greenyellow;*/
     display: inline-block;
     text-align: center;
     align-content: center;
@@ -561,6 +565,7 @@ table{
 	width: 100%;
 }
 .paragraph{
+        border-radius: 15px;
     font-size:100%;
     width:60%;
     display:inline-block;
@@ -585,16 +590,9 @@ table{
 }
 footer{
 	background-image:  url("../back_logo/Footer.png");
-/*
-	background-repeat: no-repeat;
-	background-size:cover;
-	padding: 80px 30px;
-	bottom:0;
-*/
-    width: 100%
+    width: 100%;
     background-repeat: no-repeat;
 	background-size:cover;
-/*	padding: 50px 20px;*/
     padding: 10px;
 	bottom:0;
 }
