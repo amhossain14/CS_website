@@ -12,6 +12,7 @@
             $(function() {
                 show();
                 run();
+                $("#npa").hide();
                $(".slide").hover(function(){
                 if (paused == false) {stop();}
                 }, function(){
@@ -22,7 +23,7 @@
                     prev();
                     });
                 
-                $("#np").click(function() {
+                $(".playpause").click(function() {
                     pausetoggle();
                     });  
                 
@@ -44,7 +45,8 @@
 			<main>  
                 <div id="slidenavs">
         <img src="../icon/left.png"  id="nl" class="navbutton">
-        <img src="../icon/pause.png"  id="np" class="navbutton">
+        <img src="../icon/pause.png"  id="npa" class="navbutton playpause">
+        <img src="../icon/play.png"  id="npl" class="navbutton playpause">       
         <img src="../icon/right.png"  id="nr" class="navbutton">
 </div>
 <div id="slidemachine">

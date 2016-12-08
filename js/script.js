@@ -9,19 +9,26 @@ function init(){
 
         var slideNum = 1;
         var totalSlides = 3;
-        var time = 5000; //time for each slide
+        var time = 3000; //time for each slide
         var paused = false;
+   
+
 
            function pausetoggle() {
-                if (paused == false) {
+                if (!paused) {
                     paused = true;
                     stop();
+                    $("#npl").hide();
+                    $("#npa").show();
                 }
                 else {
                     paused = false;
                     run();
+                    $("#npa").hide();
+                    $("#npl").show();
                 }    
             }
+
             function numup() {
                 if (slideNum == totalSlides) {slideNum = 1;}
                 else {slideNum = slideNum + 1;}
@@ -53,14 +60,14 @@ function init(){
                 hide();
                 numup();
                 show();
-                run();
+                if (!paused) {run();}
+                
             }
             function prev() {
                 stop();
                 hide();
                 numdown();
                 show();
-                run();
             }
             
             function run() {
