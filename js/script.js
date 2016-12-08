@@ -9,7 +9,7 @@ function init(){
 
         var slideNum = 1;
         var totalSlides = 3;
-        var time = 1000; //time for each slide
+        var time = 5000; //time for each slide
         var paused = false;
 
            function pausetoggle() {
@@ -31,7 +31,7 @@ function init(){
                 else {slideNum = slideNum - 1;}
             }
             function show() {
-                $("#S"+slideNum).fadeIn(500);
+                $("#S"+slideNum).fadeIn(1000);
                 hideothers();
             }
             function hide() {
@@ -53,7 +53,7 @@ function init(){
                 hide();
                 numup();
                 show();
-                run()
+                run();
             }
             function prev() {
                 stop();

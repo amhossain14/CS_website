@@ -659,10 +659,17 @@ footer p {
 .block .panel.shown {
     display:block;
 }
+    
+    .navbutton {
+    width: 3%; /* you can use % */
+    height: auto;
+    padding: 30px;
+}
 
 .slide {
     padding: 10px;
-    margin: auto;
+    
+    margin: 40px;
     border-radius:50px;
     width: 80%;
 /*    height: 90%;*/
@@ -676,6 +683,11 @@ footer p {
         text-align: center;
         align-content: center;
 }
+    #slidenavs {
+    margin: auto;
+    text-align: center;
+    align-content: center;
+    }
 #slidemachine {
       border-radius:10px;
     padding: 20px;

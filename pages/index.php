@@ -17,9 +17,18 @@
                 }, function(){
                 if (paused == false) {run();}       
     });
-                $("#pbutton").click(function() {
+  
+                $("#nl").click(function() {
+                    prev();
+                    });
+                
+                $("#np").click(function() {
                     pausetoggle();
-                    });          
+                    });  
+                
+                $("#nr").click(function() {
+                    next();
+                    });  
 });
         </script>
 	</head>
@@ -33,15 +42,17 @@
 				<div id="nav_div"></div>
 			</nav>
 			<main>  
-                <button id="lbutton" onclick="prev();">LEFT</button>
-                <button id="rbutton" onclick="next();">RIGHT</button>
-                <button id="pbutton" onclick="next();">PAUSE</button>
+                <div id="slidenavs">
+        <img src="../icon/left.png"  id="nl" class="navbutton">
+        <img src="../icon/pause.png"  id="np" class="navbutton">
+        <img src="../icon/right.png"  id="nr" class="navbutton">
+</div>
 <div id="slidemachine">
-
            <img src="../Slidesimg/slides(1).jpg"  id="S1" class="slide">
             <img src="../Slidesimg/slides(2).png " id="S2" class="slide">
             <img src="../Slidesimg/slides(3).png" id="S3" class="slide">
 </div>  
+
                 
              <?php    
                     $parent = "../News_update/"; //is a string
