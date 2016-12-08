@@ -22,7 +22,7 @@
 					$writehours = $_POST['optime'];
 				}
 				if(isset($_POST['cltime'])){
-					$writehours.= "-".$_POST['cltime'];
+					$writehours.= " - ".$_POST['cltime'];
 					file_put_contents($writefile, $writehours, FILE_APPEND);
 					file_put_contents($writefile, " \r\n", FILE_APPEND);
 				}

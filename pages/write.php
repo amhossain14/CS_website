@@ -40,7 +40,7 @@
 				}
 				
 				file_put_contents($file, $_POST['text']);
-				
+				header("Location: index.php");
 			?>
 			</main>
 		</div>

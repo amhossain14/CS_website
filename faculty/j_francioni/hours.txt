@@ -8,3 +8,7 @@ tue
 01:00 PM-03:00 PM 
 mon 
 02:00 PM-04:00 PM 
+thu 
+10:00 AM-10:30 AM 
+fri 
+01:00 PM-03:00 PM 
