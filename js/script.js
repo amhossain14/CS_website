@@ -34,7 +34,7 @@ function init(){
                 else {slideNum = slideNum + 1;}
             }
             function numdown() {
-                if (slideNum == 1) {nextSlide = totalSlides;}
+                if (slideNum == 1) {slideNum = totalSlides;}
                 else {slideNum = slideNum - 1;}
             }
             function show() {
