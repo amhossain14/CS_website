@@ -658,7 +658,7 @@ footer p {
 }
     
     .navbutton {
-    width: 3%; /* you can use % */
+    width: 30px;
     height: auto;
     padding: 30px;
 }
